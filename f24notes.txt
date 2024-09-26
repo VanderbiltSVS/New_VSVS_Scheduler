@@ -38,6 +38,10 @@ Drive. Additionally, testing was done to sort individuals by availability such t
 the lowest number of available blocks appeared first in the list. This did not have any impact on
 sorting success. Availability sorting algorithm can be found in "availability_sorter.py" in repo
 
+Finally, we also tried a tiered approach where we ran unsorted individuals through the sorter 
+an additional time with no padding on the class blocks. This only produced 1 extra team so it
+relatively low yield
+
 Final measures of success:
 Sorted 65 classes out of 80
 92 unsorted individuals out of 323
