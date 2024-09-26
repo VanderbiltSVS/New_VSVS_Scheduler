@@ -57,7 +57,7 @@ class Classroom:
 
     def duration(self):
         """ Returns the duration of the class in minutes. (includes travel time) """
-        return (self.end_time - self.start_time + timedelta(hours=1)).seconds/60
+        return (self.end_time - self.start_time).seconds/60
     
 
 

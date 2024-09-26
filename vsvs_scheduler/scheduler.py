@@ -9,7 +9,7 @@ from partner_data_uploader import PartnerDataUploader
 
 
 class Scheduler:
-    def __init__(self, earliest: str = "7:15", latest: str = "15:30", max_team_size: int = 5, min_team_size: int = 3):
+    def __init__(self, earliest: str = "7:15", latest: str = "17:30", max_team_size: int = 5, min_team_size: int = 3):
         """Scheduler object that holds information about the schedule and the volunteers and classrooms."""
 
         self.earliest_time = datetime.strptime(earliest, "%H:%M")

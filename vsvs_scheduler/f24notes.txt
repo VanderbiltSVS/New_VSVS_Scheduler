@@ -1,0 +1,43 @@
+Notes from Fall 2024 Sorting
+By Michael Herschbach
+
+Lots of issues arose when sorting. Sorter did not directly run on form data or 
+example data when pulled directly from Github. See all 3 input files in VSVS 
+Google Drive for necessary format changes. Significant preprocessing had to be 
+done to input files in order to meet required conditions such as Title 1 priority
+and more (see below).
+
+One potential bug was fixed on line 60 of classroom.py:
+Previous:
+"return (self.end_time - self.start_time + timedelta(hours=1)).seconds/60"
+New:
+"return (self.end_time - self.start_time).seconds/60"
+
+Did not have time to thoroughly examine how program is comprehending time blocks but
+there seemed to be an issue with padding only being applied to the end of the block,
+not the start.
+
+This fix removes padding from the program. Solution to retain padding in sorting is 
+introducing a preprocessing algorithm in "csv-time-modifier.py" for teacher input file
+which adds 25 minutes of padding to start and finish and cuts class blocks so that 
+they are all 1 hour long.
+Note: some classes are given by the teachers to be less than an hour. This program 
+incorrectly assumes all classes to be an hour even if they are less. This was manually 
+fixed later on.
+
+Because of heavy preference by teachers to have all classes on the same day, classes
+were manually collated by assigning each teacher only 1 day. Teachers at title 1 schools
+received priority in their first day of choice. Days were assigned to ensure a relatively
+even spread of classes for each day of the week. Teachers were also sorted by Title 1 priority
+in the input files such that they would be sorted first (it is unclear if this had any effect). 
+See files "Teacher Priortization" for annotations and "TEACHERTIMES_PLUS_25" for final classroom input
+files (which include padding) in Google Drive
+
+Standby applications were manually appended to the list of regular applications. Input file in
+Drive. Additionally, testing was done to sort individuals by availability such that those with
+the lowest number of available blocks appeared first in the list. This did not have any impact on
+sorting success. Availability sorting algorithm can be found in "availability_sorter.py" in repo
+
+Final measures of success:
+Sorted 65 classes out of 80
+92 unsorted individuals out of 323
