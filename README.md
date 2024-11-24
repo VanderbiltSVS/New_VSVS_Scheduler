@@ -4,7 +4,7 @@
 
 Project started October 2019
 
-**Authors**:[`docs/authors.txt`](Authors)
+**Authors**:[`Authors`](docs/authors.txt)
 
 **Description**: Imports data from data/classrooms.csv, data/individuals.csv, and data/partners.csv and assigns
  volunteers to groups. Assigns partners, then drivers, then team leaders, then everyone else. Outputs results in results/assignments.csv.
