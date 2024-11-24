@@ -1,8 +1,7 @@
-# New_VSVS_Scheduler
-
+# VSVS Scheduler
 Project started October 2019
 
-**Authors**:[`Authors`](docs/authors.txt)
+[`Authors`](docs/authors.txt)
 
 **Description**: Imports data from `data/classrooms.csv`, `data/individuals.csv`, and `data/partners.csv`and assigns
  volunteers to groups. Outputs results in results/assignments.csv.
