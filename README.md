@@ -6,6 +6,7 @@ Project started October 2019
 **Description**: Imports data from `data/classrooms.csv`, `data/individuals.csv`, and `data/partners.csv`and assigns
  volunteers to groups. Outputs results in results/assignments.csv.
 
+**For new IT Members**: [`Onboarding Guide`](docs/OnboardingNewITMembersx.md)
 <hr>
 
 ## Getting Started
