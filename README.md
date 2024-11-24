@@ -1,13 +1,11 @@
 # New_VSVS_Scheduler
 
-![Python application](https://github.com/VanderbiltSVS/New_VSVS_Scheduler/workflows/Python%20application/badge.svg?branch=Fall_2020)
-
 Project started October 2019
 
 **Authors**:[`Authors`](docs/authors.txt)
 
-**Description**: Imports data from data/classrooms.csv, data/individuals.csv, and data/partners.csv and assigns
- volunteers to groups. Assigns partners, then drivers, then team leaders, then everyone else. Outputs results in results/assignments.csv.
+**Description**: Imports data from `data/classrooms.csv`, `data/individuals.csv`, and `data/partners.csv`and assigns
+ volunteers to groups. Outputs results in results/assignments.csv.
 
 <hr>
 
